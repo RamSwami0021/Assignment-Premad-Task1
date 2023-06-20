@@ -1,0 +1,250 @@
+/* CSS for the login page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  padding: 0;
+  margin: 0;
+}
+
+.formLogin {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 240px;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"], select {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 14px 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #ddd;
+}
+.input-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .name-inputs,
+  .dob-inputs,
+  .gender-inputs {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .name-inputs .input-group,
+  .dob-inputs .input-group,
+  .gender-inputs .input-group {
+    flex: 1;
+  }
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: smaller;
+}
+
+.button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+}
+
+.button:hover {
+  background-color: #0f65c0;
+}
+
+.sign_up {
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+a {
+  color: #1877f2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1877f2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* CSS for the signup modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.horizontal-list li {
+  margin-right: 10px; /* Add spacing between the list items */
+}
+
+#line {
+  border-bottom: 1px solid #dddfe2;
+  font-size: 1px;
+  height: 8px;
+  margin-bottom: 8px;
+}
+.line {
+    border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 8px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+.footer {
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-right: 190px;
+  padding-left: 190px;
+  padding-bottom: 20px;
+  margin-top: 80px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer-content {
+  margin: 0 auto;
+  padding-top: 50px 100px;
+  align-items: center;
+}
+
+.terms-of-service {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .terms-of-service a {
+    color: #385898;
+    text-decoration: none;
+  }
+
+  .minititle {
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+  }
+
+  .button-signup{
+    margin: 0px 138px;
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+  }
+
+  .head_signup {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .already {
+    color: #1877f2;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .meta {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  ul li a{
+    color: #8a8d91;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: smaller;
+  }
